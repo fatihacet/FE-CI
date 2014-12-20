@@ -44,6 +44,13 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-karma'
 
 
+  grunt.registerTask 'ci', 'Default task', ->
+    grunt.task.run [
+      'coffee'
+      'karma'
+    ]
+
+
   grunt.registerTask 'default', 'Default task', ->
     grunt.task.run [
       'coffee'
