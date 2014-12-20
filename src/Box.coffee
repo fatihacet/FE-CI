@@ -10,10 +10,10 @@ class Box
   ###
   constructor: (options = {}) ->
 
-    @top    = options.top  or 0
-    @right  = options.right or 0
+    @top    = options.top    or 0
+    @right  = options.right  or 0
     @bottom = options.bottom or 0
-    @left   = options.left or 0
+    @left   = options.left   or 0
 
 
   ###*
@@ -31,7 +31,7 @@ class Box
     @return {number} Box height.
   ###
   getHeight: ->
-    return @top - @bottom
+    return @bottom - @top
 
 
   ###*
