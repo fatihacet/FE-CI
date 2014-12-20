@@ -3,6 +3,10 @@ class Box
   ###*
     Class for representing a box. A box is specified as a top, right, bottom
     and left.
+
+    @constructor
+    @param {Object} options Options object to hold top, right, bottom
+    and left values.
   ###
   constructor: (options = {}) ->
 
