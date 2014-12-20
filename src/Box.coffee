@@ -51,5 +51,5 @@ class Box
   scale: (ratio) ->
     @top    *= ratio
     @right  *= ratio
-    @top    *= ratio
     @bottom *= ratio
+    @left   *= ratio
