@@ -9,3 +9,5 @@ install:
 - npm install -g grunt
 script:
 - grunt ci
+after_script:
+- cat ./build/coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js
