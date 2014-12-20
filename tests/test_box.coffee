@@ -1,5 +1,7 @@
 describe 'Box', ->
 
+  box = null
+
   beforeEach ->
     box      = new Box
       top    : 200
