@@ -7,13 +7,19 @@ module.exports = function(config) {
       'build/tests/**/test_*.js'
     ],
     exclude: [],
-    preprocessors: {},
-    reporters: ['dots'],
+    preprocessors: {
+      'build/tests/**/*.js': ['coverage']
+    },
+    reporters: ['dots', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['PhantomJS'],
-    singleRun: true
+    singleRun: true,
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'build/coverage/'
+    }
   });
 };
