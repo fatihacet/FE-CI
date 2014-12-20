@@ -28,19 +28,25 @@ module.exports = (grunt) ->
         interrupt        : yes
       src                :
         files            : [ 'src/**/*.coffee' ]
-        tasks            : [ 'coffee:src' ]
+        tasks            : [ 'coffee:src', 'karma' ]
       tests              :
         files            : [ 'tests/**/*.coffee' ]
-        tasks            : [ 'coffee:tests' ]
+        tasks            : [ 'coffee:tests', 'karma' ]
+
+    karma                :
+      tests              :
+        configFile       : 'karma.conf.js'
 
 
   grunt.loadNpmTasks 'grunt-npm'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-karma'
 
 
   grunt.registerTask 'default', 'Default task', ->
     grunt.task.run [
       'coffee'
+      'karma'
       'watch'
     ]
