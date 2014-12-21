@@ -4,6 +4,13 @@ This repo demonstrates how to start a new project using best Test Driven Develop
 
 The blog post currently in Turkish but I am planning to post another one in English soon.
 
+#### Steps for getting the repository up and running
+- clone the repository and cd to repo directory
+- npm install
+- npm install -g grunt-cli
+- npm install -g grunt
+- grunt
+
 ----
 
 Bu repo Front End gelistirme surecleri icin test ve CI entegrasyonlarini en iyi yontemlerle (best practice) yapmayi gosteren [suradaki](http://fatihacet.com/fe-ci) blog post'a aittir. Kodu daha iyi anlayabilmek icin blog post'u okumanizi tavsiye ederim.
@@ -20,3 +27,11 @@ Yapilacak islerin listesi ise su sekilde.
 * IstanbulJS kullanarak kod coverage raporumuzu elde edecegiz.
 * Coveralls.io ile coverage durum ve gecmisimiz
 * Travis ile CI entegrasyonu saglamis olacagiz.
+
+
+### Repoyu clone'ladiktan sonra calistirmak icin
+
+- npm install
+- npm install -g grunt-cli
+- npm install -g grunt
+- grunt
